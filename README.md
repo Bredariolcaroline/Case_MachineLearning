@@ -1,6 +1,6 @@
 # Case_MachineLearning
 
- O dataset utilizado nesse projeto contém dados sociodemográficos e firmográficos de 2.240 clientes de uma empresa.
+ O dataset utilizado nesse projeto contém dados sociodemográficos e firmográficos de 2.240 clientes de uma empresa. Os dados são provenientes de um processo seletivo da empresa iFood, finalizado em 2020.
 
  Há dados sobre campanhas e se os clientes foram receptivos a essas campanhas ou não.
 
