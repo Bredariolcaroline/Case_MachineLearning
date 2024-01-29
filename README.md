@@ -4,7 +4,7 @@
 
  Há dados sobre campanhas e se os clientes foram receptivos a essas campanhas ou não.
 
- Esse projeto está dividido em dois códigos, sendo que um deles engloba uma etapa de PCA (Princiapl Component Analysis), através do qual foi realizado uma redução de dimensionalidade.
+ Esse projeto está dividido em dois notebooks, sendo que um deles engloba uma etapa de PCA (Principal Component Analysis), através do qual foi realizado uma redução de dimensionalidade.
 
  ### Objetivos
  - Realizar análise exploratória de dados
@@ -14,19 +14,19 @@
 ### Análise exploratória
  Foi realizada uma etapa inicial de análises através do Profile Report, verificando de forma mais direta alguns dados e a partir disso, pudemos verificar duplicidade e nulidade de dados, verificação de possíveis outliers, além de quais fatures poderiam ser analisadas e até mesmo, se necessitavam de algum tipo de tratamento.
 
- Para facilitar a visualização, decidimos realizar uma segregação das idades, separando-as em grupos:
+-  Para facilitar a visualização, decidimos realizar uma segregação das idades, separando-as em grupos:
   - jovem-adulto:18-30
   - adulto: 31-45
   - adulto_senior: 46-60
   - idoso: 61+
 
- Criação de duas colunas para separar entre gastos com produtos regulares e com produtos considerados 'Gold': MntTotal e MntRegularProds.
+ - Criação de duas colunas para separar entre gastos com produtos regulares e gastos com o todo: MntRegularProds e MntTotal.
 
- Junção das colunas KidHome e TeenHome em uma colun chamada Children, falando apenas sobre ter filhos ou não, sem segregá-los entre crianças e adolescentes.
+ J- unção das colunas KidHome e TeenHome em uma colun chamada Children, falando apenas sobre ter filhos ou não, sem segregá-los entre crianças e adolescentes.
 
- Para a coluna MaritalStatus que continha muitas informações, que em alguns casos pareciam repetitivas, as informações foram reunidas em 'Partner' ou 'Single', apenas.
+-  Para a coluna MaritalStatus que continha muitas informações, que em alguns casos pareciam repetitivas, as informações foram reunidas em 'Partner' ou 'Single', apenas.
 
-Utilização do get_dummies do Pandas para transformação de colunas categóricas em colunas indicadoras para possibilitar o uso de algoritmos e verificação de correlação entre as features.
+- Utilização do get_dummies do Pandas para transformação de colunas categóricas em colunas indicadoras para possibilitar o uso de algoritmos e verificação de correlação entre as features.
 
 ### Pré-processamento
 Utilização de OneHotEncoder, StandarScaler, MinMaxScaler e PowerTransformer para padronização dos dados.
@@ -62,7 +62,7 @@ Foi realizada uma etapa de PCA (Principal Component Analysis), que é uma técni
 -pessoas mais jovens
 
 ### Testes em busca do melhor modelo
-A partir da verificação de métricas, escolhemos o modelo que melhor se adequou para nossos dados, levando em consideração principalmente ROC, Precisão e Recall.
+A partir da verificação de métricas, escolhemos o modelo que melhor se adequou para nossos dados, levando em consideração principalmente ROC, Precisão, Recall e o tempo.
 
 ### GridSearchCV
 Após a escolha do modelo,  os melhores hiperparâmetros foram buscados por meio do GridSearCV
