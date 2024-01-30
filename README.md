@@ -22,7 +22,7 @@
 
  - Criação de duas colunas para separar entre gastos com produtos regulares e gastos com o todo: MntRegularProds e MntTotal.
 
- J- unção das colunas KidHome e TeenHome em uma colun chamada Children, falando apenas sobre ter filhos ou não, sem segregá-los entre crianças e adolescentes.
+ - Junção das colunas KidHome e TeenHome em uma colun chamada Children, falando apenas sobre ter filhos ou não, sem segregá-los entre crianças e adolescentes.
 
 -  Para a coluna MaritalStatus que continha muitas informações, que em alguns casos pareciam repetitivas, as informações foram reunidas em 'Partner' ou 'Single', apenas.
 
