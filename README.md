@@ -77,3 +77,5 @@ Precision Recall: anteriormente 0,42 e agora 0,58
 ![image](https://github.com/Bredariolcaroline/Case_MachineLearning/assets/121267765/4189e140-859e-4f52-a6a1-3889afed55bc)
 
 
+
+
